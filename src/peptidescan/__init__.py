@@ -1,5 +1,13 @@
-"""
-PeptideScan: pacote Python para análise e seleção de sequências peptídicas.
-"""
+from .fasta import read_fasta
+from .properties import calculate_length, calculate_molecular_mass
+from .composition import amino_acid_count, contains_amino_acids
+from .filtering import filter_peptides
 
-__version__ = "0.1.0"
+__all__ = [
+    "read_fasta",
+    "calculate_length",
+    "calculate_molecular_mass",
+    "amino_acid_count",
+    "contains_amino_acids",
+    "filter_peptides"
+]
